@@ -1,0 +1,59 @@
+#experiencia{
+  max-width: 1350px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color:beige;
+  border-radius: 26px;
+  scroll-margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 0px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  /* background: rgb(136, 136, 136); */
+}
+#experiencia h1{
+  font-family: "Vidaloka", serif;
+  font-size: 50px;
+  padding-left: 50px; 
+}
+#experiencia .filauno{
+  
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 50px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  text-align:start
+}
+#experiencia .filados{
+  max-width: 150ch;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 0px 0px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  text-align:start
+}
+.filados > h4{
+  font-size: 15px;
+}
+#experiencia .filacuatro{
+  max-width: 150ch;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 0px 0px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  text-align:start
+}
+.filacuatro > h4{
+  font-size: 15px;
+}

@@ -1,0 +1,66 @@
+#sobre-mi{
+  max-width: 1350px;
+  min-width: 320px;
+  background-color: azure;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 50px;
+  margin: 0 auto;
+  scroll-margin-top: 20vh;
+  /* background: rgb(181, 181, 181); */
+}
+#sobre-mi h1{
+  font-family: "Vidaloka", serif;
+  font-size: 50px;
+  padding-left: 0px; 
+}
+#sobre-mi .filauno{
+  background-color: #14085500;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  text-align:start;
+}
+@media (max-width:800px){
+    #sobre-mi .filauno{
+        font-size: 15px;
+        gap: 0;
+    }
+}
+.filaunoa{
+background-color: rgba(0, 255, 255, 0);
+ width: 70%;  
+ flex-shrink: 1;
+}
+#sobre-mi .filaunob{
+  background-color: rgba(127, 255, 212, 0);
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+.filaunob .cv{
+  background-color: #8c78ff;
+  padding: 12px 24px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+  border-radius: 50px;
+  text-wrap: nowrap;
+}
+.cv:hover{
+    background-color: #444;
+    transform: translateY(-5px);
+}
+.btn-cv:active{
+    transform: translateY(-50px);
+}
+

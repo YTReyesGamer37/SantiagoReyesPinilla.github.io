@@ -1,0 +1,257 @@
+#proyectos {
+  /* height: 100vh; */
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 30px 0px;
+  background: rgba(155, 155, 155, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+#proyectos h1 {
+    color: white;
+    background-color: #000000a5;
+    text-align: center;
+    width: 1000px;
+    border-radius: 25px;
+  font-family: "Vidaloka", serif;
+  font-size: 50px;
+}
+#proyectos .columnas {
+  background-color: rgba(210, 105, 30, 0);
+  width: 100%;
+  padding: 0px 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 50px;
+}
+@media (max-width: 600px) {
+  #proyectos .columnas {
+    flex-wrap: wrap;
+  }
+}
+.columnas .rowa {
+  flex: 0 1 auto;
+  width: 715px;
+  min-width: 320px;
+  height: fit-content;
+  /* aspect-ratio: 16/9; */
+  /* background-color: rgb(67, 88, 88); */
+  display: flex;
+  flex-direction: column;
+  border: 13px solid rgba(0, 0, 0, 0.733);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.columnas .rowb {
+  flex: 0 1 auto;
+  width: 715px;
+  min-width: 320px;
+  aspect-ratio: 16/9;
+  /* background-color: rgb(163, 245, 178); */
+  border: 13px solid rgba(0, 0, 0, 0.733);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.rowa .rowuno {
+  aspect-ratio: 16/9;
+  background-color: aliceblue;
+  background-image: url("Images/ChessInteractive.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.rowb .rowuno {
+  aspect-ratio: 16/9;
+  background-color: rgb(218, 237, 253);
+  background-image: url("Images/SomosVida.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.rowa .rowdos {
+  aspect-ratio: 16/9;
+  background-color: rgb(218, 237, 253);
+  background-image: url("Images/PlazaPlacentera.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.rowb .rowdos {
+  aspect-ratio: 16/9;
+  background-color: rgb(218, 237, 253);
+  background-image: url("Images/Bhastardy.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.rowa .rowtres {
+  aspect-ratio: 16/9;
+  background-color: rgb(218, 237, 253);
+  background-image: url("Images/PlazaPlacentera.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.rowb .rowtres {
+  aspect-ratio: 16/9;
+  background-color: rgb(218, 237, 253);
+  background-image: url("Images/LeesRevenga.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.desc {
+  height: 100px;
+  padding: 5px 15px;
+  background: #222;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.desc h2 {
+  font-family: "Vidaloka", serif;
+  font-size: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* número de líneas visibles */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.desc .hache3 {
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.hache3 .txt {
+  width: 75%;
+  text-align: left;
+  overflow: hidden;
+}
+.txt h3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* número de líneas visibles */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.hache3 .vermas {
+  align-items: center;
+  margin: 0 auto;
+}
+.vermas .btn {
+  font-size: 12px;
+  background-color: #9f39ff;
+  padding: 12px 24px;
+  color: white;
+  text-decoration: wavy;
+  font-weight: 600;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
+  border-radius: 50px;
+  text-wrap: nowrap;
+}
+
+.rowa:hover{
+    transform: translateY(-20px);
+}
+.rowb:hover{
+    transform: translateY(-20px);
+}
+.btn:hover{
+    background-color: #fffb00;
+    color: black;
+}
+
+/*  
+DESVANECIDO NEGRO
+*/
+.fade-out {
+  position: relative;
+}
+
+.fade-out::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40%; /* qué tanto se desvanece */
+  pointer-events: none;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.97),
+    rgba(0,0,0,1)
+  );
+}
+
+.no-interact {
+  pointer-events: none;
+}
+
+/* 
+
+CONSTRUCCION DE LOS VIDEOS
+
+*/
+
+.video-chess{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.841);
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 50px 50px;
+   text-align: end; 
+   
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .4s ease;
+}
+
+.video-chess.show{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.closeone a{
+  background-color: #9f39ff00;
+  color: inherit;
+  text-decoration: none;
+}
+.videoone{
+  background-color: white;
+  border: 10px solid rgba(255, 255, 255, 0.733);
+  max-width: 854px;
+  min-width: 320px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+
+}
+
+.description{
+  background-color: black;
+  border: 5px solid rgb(255, 255, 255);
+  max-width: 854px;
+  min-width: 320px;
+  width: 100%;
+  height: 30vh;
+  margin: 0 auto;
+  text-align: start;
+  padding-left: 30px;
+}
