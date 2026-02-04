@@ -177,26 +177,18 @@ main {
 
 
 
-#inicio .parallax-bg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index: 0;
-} 
-
 #inicio h1{
   -webkit-text-stroke: 0.1px black;
     text-shadow: 
         0 0 4px rgba(0,255,180,0.4),
         0 2px 6px rgba(0,0,0,0.7);
-  letter-spacing: 3px;
+  letter-spacing: clamp(0.5px, 1vw, 3px);
   font-family: 'Anton', sans-serif;
-  font-size: 80px;
+  font-size: clamp(28px, 6vw, 80px);
   align-items: center;
   color: rgb(236, 235, 235);
   background-color: #000000a5;
-  width: 1000px;
+  width: 70vw;
   border-radius: 26px;
 }
 .bloque1{
@@ -205,10 +197,10 @@ main {
 #inicio h2{
   -webkit-text-stroke: 0.1px rgb(0, 0, 0);
   font-family: 'Anton', sans-serif;
-  font-size: 40px;
+  font-size: clamp(16px, 3vw, 40px);
   color: rgb(236, 235, 235);
   background-color: #000000a5;
-  width: 600px;
+  width: 45vw;
   border-radius: 26px;
 }
 
@@ -314,3 +306,4 @@ COSAS DEL FADEEEE
   transform: translateY(0);
 
 }
+
