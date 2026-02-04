@@ -74,7 +74,7 @@
 .rowa .rowdos {
   aspect-ratio: 16/9;
   background-color: rgb(218, 237, 253);
-  background-image: url("/PlazaPlacentera.png");
+  background-image: url("PlazaPlacentera.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -256,3 +256,4 @@ CONSTRUCCION DE LOS VIDEOS
   padding-left: 30px;
 
 }
+
