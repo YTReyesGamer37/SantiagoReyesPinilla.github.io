@@ -156,7 +156,7 @@ main {
   left: 0;
   width: 100%;
   height: 120vh;
-  background-image: url("Images/fondotres.png");
+  background-image: url("fondotres.png");
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -312,4 +312,5 @@ COSAS DEL FADEEEE
 .fate.show {
   opacity: 1;
   transform: translateY(0);
+
 }
