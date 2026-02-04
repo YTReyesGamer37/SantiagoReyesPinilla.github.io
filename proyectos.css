@@ -58,7 +58,7 @@
 .rowa .rowuno {
   aspect-ratio: 16/9;
   background-color: aliceblue;
-  background-image: url("Images/ChessInteractive.png");
+  background-image: url("ChessInteractive.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -66,7 +66,7 @@
 .rowb .rowuno {
   aspect-ratio: 16/9;
   background-color: rgb(218, 237, 253);
-  background-image: url("Images/SomosVida.png");
+  background-image: url("SomosVida.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -74,7 +74,7 @@
 .rowa .rowdos {
   aspect-ratio: 16/9;
   background-color: rgb(218, 237, 253);
-  background-image: url("Images/PlazaPlacentera.png");
+  background-image: url("/PlazaPlacentera.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -82,7 +82,7 @@
 .rowb .rowdos {
   aspect-ratio: 16/9;
   background-color: rgb(218, 237, 253);
-  background-image: url("Images/Bhastardy.png");
+  background-image: url("Bhastardy.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -90,7 +90,7 @@
 .rowa .rowtres {
   aspect-ratio: 16/9;
   background-color: rgb(218, 237, 253);
-  background-image: url("Images/PlazaPlacentera.png");
+  background-image: url("PlazaPlacentera.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -98,7 +98,7 @@
 .rowb .rowtres {
   aspect-ratio: 16/9;
   background-color: rgb(218, 237, 253);
-  background-image: url("Images/LeesRevenga.png");
+  background-image: url("LeesRevenga.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -254,4 +254,5 @@ CONSTRUCCION DE LOS VIDEOS
   margin: 0 auto;
   text-align: start;
   padding-left: 30px;
+
 }
