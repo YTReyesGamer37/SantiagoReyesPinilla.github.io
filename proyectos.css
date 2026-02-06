@@ -33,7 +33,7 @@
 .columnas .rowa {
   flex: 0 1 auto;
   width: 715px;
-  min-width: 420px;
+  min-width: 320px;
   height: fit-content;
   /* aspect-ratio: 16/9; */
   /* background-color: rgb(67, 88, 88); */
@@ -45,7 +45,7 @@
 .columnas .rowb {
   flex: 0 1 auto;
   width: 715px;
-  min-width: 420px;
+  min-width: 320px;
   aspect-ratio: 16/9;
   /* background-color: rgb(163, 245, 178); */
   border: 13px solid rgba(0, 0, 0, 0.733);
