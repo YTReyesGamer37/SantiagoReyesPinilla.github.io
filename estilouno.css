@@ -28,25 +28,15 @@ html{
   z-index: 999;
 }
 
-.header {
-  height: 40px;
-  display: flex;
-  list-style: none;
-  gap: clamp(5px, 3vw, 30px);
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  margin-right: 10px;
-}
-
 .nav-logo img {
   width: 30px;
   margin-top: 5px;
-  margin-left: 20px;
+  
 }
 
 .titulo-header{
   font-size: clamp(4px, 3vw, 25px);
+  margin-left: clamp(50px, 8vw, 150px);
 }
 /* AQUI HAY UN TITULO PERO SE VE MAS BONITO SIN EL JIJI N08/12/25 */
 .titulo-header a {  
@@ -62,25 +52,40 @@ html{
   color: rgb(1, 215, 1);
 }
 
+.header {
+  height: 40px;
+  display: flex;
+  list-style: none;
+  gap: clamp(0px, 2vw, 30px);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.header li{
+  padding: 0;
+  margin: 0;
+}
+
 .insta img {
-  width: 25px;
-  margin-top: 10px;
+  width: clamp(25px, 3vw, 35px);
+  margin-top: 2px;
 }
 .insta img:hover {
   transform: scale(1.5);
 }
 
 .linked img {
-  width: 12px;
-  margin-top: 17px;
+  width: clamp(12px, 3vw, 24px);
+  margin-top: 8px;
 }
 .linked img:hover {
   transform: scale(1.5);
 }
 
 .station img {
-  width: 14px;
-  margin-top: 18px;
+  width: clamp(14px, 3vw, 26px);
+  margin-top: 10px;
 }
 .station img:hover {
   transform: scale(1.5);
@@ -89,6 +94,18 @@ html{
 
 #headera.hide {
   transform: translateY(-100%); /* se mueve hacia arriba y se oculta */
+}
+
+@media (max-width:800px){
+ .insta img{
+  margin-top: 10px;
+ }
+ .linked img{
+  margin-top: 14px;
+ }
+ .station img{
+  margin-top: 17px;
+ }
 }
 
 /* COSAS DEL SIDEBAAAAAAAAAAAAAAAAAAAAR */
