@@ -29,15 +29,11 @@
   justify-content: center;
   gap: 50px;
 }
-@media (max-width: 600px) {
-  #proyectos .columnas {
-    flex-wrap: wrap;
-  }
-}
+
 .columnas .rowa {
   flex: 0 1 auto;
   width: 715px;
-  min-width: 320px;
+  min-width: 420px;
   height: fit-content;
   /* aspect-ratio: 16/9; */
   /* background-color: rgb(67, 88, 88); */
@@ -49,7 +45,7 @@
 .columnas .rowb {
   flex: 0 1 auto;
   width: 715px;
-  min-width: 320px;
+  min-width: 420px;
   aspect-ratio: 16/9;
   /* background-color: rgb(163, 245, 178); */
   border: 13px solid rgba(0, 0, 0, 0.733);
@@ -254,6 +250,16 @@ CONSTRUCCION DE LOS VIDEOS
   margin: 0 auto;
   text-align: start;
   padding-left: 30px;
-
 }
 
+@media (max-width: 600px) {
+  #proyectos .columnas {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1000px) {
+  #proyectos h1{
+    width: fit-content;
+    padding: 0px 35px;
+  }
+}
