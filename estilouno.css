@@ -96,17 +96,6 @@ html{
   transform: translateY(-100%); /* se mueve hacia arriba y se oculta */
 }
 
-@media (max-width:800px){
- .insta img{
-  margin-top: 10px;
- }
- .linked img{
-  margin-top: 14px;
- }
- .station img{
-  margin-top: 17px;
- }
-}
 
 /* COSAS DEL SIDEBAAAAAAAAAAAAAAAAAAAAR */
 
@@ -203,9 +192,8 @@ main {
   align-items: center;
   color: rgb(236, 235, 235);
   background-color: #000000a5;
-  width: fit-content;
-  border-radius: 26px;
-  padding: 0px 15px;
+  width: 80vw;
+  border-radius: 100px;
   margin-bottom: 15px;
   text-wrap: nowrap;
 }
@@ -219,9 +207,7 @@ main {
   color: rgb(236, 235, 235);
   background-color: #000000a5;
   width: 45vw;
-  width: fit-content;
-  padding: 0px 15px;
-  border-radius: 26px;
+  border-radius: 100px;
 }
 
 /* #inicio h3 a{
@@ -324,4 +310,28 @@ COSAS DEL FADEEEE
 .fate.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (max-width:800px){
+ .insta img{
+  margin-top: 10px;
+ }
+ .linked img{
+  margin-top: 14px;
+ }
+ .station img{
+  margin-top: 17px;
+ }
+}
+
+@media (max-width:1000px){
+  #inicio h1{
+    width: fit-content;
+    padding: 0px 15px;
+
+  }
+  #inicio h2{
+    width: fit-content;
+    padding: 0px 15px;
+  }
 }
