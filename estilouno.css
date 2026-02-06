@@ -199,12 +199,15 @@ main {
         0 2px 6px rgba(0,0,0,0.7);
   letter-spacing: clamp(0.5px, 1vw, 3px);
   font-family: 'Anton', sans-serif;
-  font-size: clamp(28px, 6vw, 80px);
+  font-size: clamp(28px, 8vw, 80px);
   align-items: center;
   color: rgb(236, 235, 235);
   background-color: #000000a5;
-  width: 70vw;
+  width: fit-content;
   border-radius: 26px;
+  padding: 0px 15px;
+  margin-bottom: 15px;
+  text-wrap: nowrap;
 }
 .bloque1{
   justify-items: center;
@@ -212,10 +215,12 @@ main {
 #inicio h2{
   -webkit-text-stroke: 0.1px rgb(0, 0, 0);
   font-family: 'Anton', sans-serif;
-  font-size: clamp(16px, 3vw, 40px);
+  font-size: clamp(16px, 6vw, 40px);
   color: rgb(236, 235, 235);
   background-color: #000000a5;
   width: 45vw;
+  width: fit-content;
+  padding: 0px 15px;
   border-radius: 26px;
 }
 
