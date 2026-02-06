@@ -28,6 +28,10 @@
   text-align:start;
 }
 @media (max-width:800px){
+    #sobre-mi{
+      padding: 30px 50px;
+      gap: 20px;
+    }
     #sobre-mi .filaunoa{
         font-size: 10px;
         gap: 0;
@@ -67,4 +71,5 @@ background-color: rgba(0, 255, 255, 0);
 .btn-cv:active{
     transform: translateY(-50px);
 }
+
 
