@@ -28,8 +28,12 @@
   text-align:start;
 }
 @media (max-width:800px){
-    #sobre-mi .filauno{
-        font-size: 15px;
+    #sobre-mi .filaunoa{
+        font-size: 10px;
+        gap: 0;
+    }
+    #sobre-mi .filaunob{
+        font-size: 8px;
         gap: 0;
     }
 }
