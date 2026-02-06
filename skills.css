@@ -74,7 +74,7 @@
 .columnaunob .card{
   width: 20%;
   aspect-ratio: 4/4;
-  /* background-image: url("Images/Csharp_Logo.png"); */
+  /* background-image: url("Csharp_Logo.png"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -91,4 +91,12 @@
   text-wrap: nowrap;
   width: 90%;
   background-color: aliceblue;
+}
+
+@media (max-width: 1000px){
+  #skills > h1{
+    width: fit-content;
+    padding: 0px 15px;
+    text-wrap: wrap;
+  }
 }
