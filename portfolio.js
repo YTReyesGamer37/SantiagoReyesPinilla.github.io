@@ -62,6 +62,17 @@ elementos.forEach(el => observer.observe(el));
 //   overlay.classList.remove("show");
 // });
 
+
+
+// COSAS DE LOS VIDEOS 2 INTERRUMPIDAS POR LOS VIDEOS 
+
+function resetAllVideos() {
+  document.querySelectorAll("iframe").forEach(iframe => {
+    iframe.src = iframe.src;
+    console.log("RESETEAAA");
+  });
+}
+
 const buttons = document.querySelectorAll(".btn-videos");
 buttons.forEach(btn => {
   btn.addEventListener("click", () => {
@@ -73,6 +84,12 @@ buttons.forEach(btn => {
 const closeButtons = document.querySelectorAll(".closeone");
 closeButtons.forEach(cerrar => {
   cerrar.addEventListener("click", () => {
+    resetAllVideos(); 
+    console.log("Se clickeó el botón:");
     cerrar.closest("section").classList.remove("show");
   });
 });
+
+console.log(typeof YT); 
+console.log(typeof YT.Player);
+
