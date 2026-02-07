@@ -4,7 +4,7 @@
   padding: 0;
 }
 *{
- outline: 1px solid red;
+ /* outline: 1px solid red; */
 }
 body{
  overflow-x: auto;
@@ -348,3 +348,4 @@ COSAS DEL FADEEEE
     padding: 0px 15px;
   }
 }
+
