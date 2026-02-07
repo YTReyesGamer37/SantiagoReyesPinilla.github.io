@@ -1,265 +1,425 @@
-#proyectos {
-  /* height: 100vh; */
-  margin: 0 auto;
-  margin-top: 100px;
-  padding: 30px 0px;
-  background: rgba(155, 155, 155, 0);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  width: 100%;
-}
-#proyectos h1 {
-    color: white;
-    background-color: #000000a5;
-    text-align: center;
-    width: 1000px;
-    border-radius: 25px;
-  font-family: "Vidaloka", serif;
-  font-size: 50px;
-}
-#proyectos .columnas {
-  background-color: rgba(210, 105, 30, 0);
-  width: 100%;
-  padding: 0px 80px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 50px;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.columnas .rowa {
-  flex: 0 1 auto;
-  width: 715px;
-  min-width: 320px;
-  height: fit-content;
-  /* aspect-ratio: 16/9; */
-  /* background-color: rgb(67, 88, 88); */
-  display: flex;
-  flex-direction: column;
-  border: 13px solid rgba(0, 0, 0, 0.733);
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-.columnas .rowb {
-  flex: 0 1 auto;
-  width: 715px;
-  min-width: 320px;
-  aspect-ratio: 16/9;
-  /* background-color: rgb(163, 245, 178); */
-  border: 13px solid rgba(0, 0, 0, 0.733);
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-.rowa .rowuno {
-  aspect-ratio: 16/9;
-  background-color: aliceblue;
-  background-image: url("ChessInteractive.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.rowb .rowuno {
-  aspect-ratio: 16/9;
-  background-color: rgb(218, 237, 253);
-  background-image: url("SomosVida.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.rowa .rowdos {
-  aspect-ratio: 16/9;
-  background-color: rgb(218, 237, 253);
-  background-image: url("PlazaPlacentera.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.rowb .rowdos {
-  aspect-ratio: 16/9;
-  background-color: rgb(218, 237, 253);
-  background-image: url("Bhastardy.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.rowa .rowtres {
-  aspect-ratio: 16/9;
-  background-color: rgb(218, 237, 253);
-  background-image: url("PlazaPlacentera.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.rowb .rowtres {
-  aspect-ratio: 16/9;
-  background-color: rgb(218, 237, 253);
-  background-image: url("LeesRevenga.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.desc {
-  height: 100px;
-  padding: 5px 15px;
-  background: #222;
-  color: white;
-  font-size: 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.desc h2 {
-  font-family: "Vidaloka", serif;
-  font-size: 20px;
-  display: -webkit-box;
-  -webkit-line-clamp: 1; /* número de líneas visibles */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.desc .hache3 {
-  font-family: "Lato", sans-serif;
-  font-size: 10px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.hache3 .txt {
-  width: 75%;
-  text-align: left;
-  overflow: hidden;
-}
-.txt h3 {
-  display: -webkit-box;
-  -webkit-line-clamp: 4; /* número de líneas visibles */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.hache3 .vermas {
-  align-items: center;
-  margin: 0 auto;
-}
-.vermas .btn {
-  font-size: 12px;
-  background-color: #9f39ff;
-  padding: 12px 24px;
-  color: white;
-  text-decoration: wavy;
-  font-weight: 600;
-  transition:
-    background 0.3s ease,
-    transform 0.2s ease;
-  border-radius: 50px;
-  text-wrap: nowrap;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="edgerunners.png" type="image/png">
+    <title>Mi portafolio - Santiago Reyes Pinilla</title>
+    <!-- ARCHIVOS DE CSS EN ORDEN -->
+    <link rel="stylesheet" href="estilouno.css">
+    <link rel="stylesheet" href="sobremi.css">
+    <link rel="stylesheet" href="experiencia.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="proyectos.css">
 
-.rowa:hover{
-    transform: translateY(-20px);
-}
-.rowb:hover{
-    transform: translateY(-20px);
-}
-.btn:hover{
-    background-color: #fffb00;
-    color: black;
-}
+    <!-- FUENTES DE LA PAGINA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Federo&family=Limelight&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+</head>
 
-/*  
-DESVANECIDO NEGRO
-*/
-.fade-out {
-  position: relative;
-}
+<body>
+    <div class="parallax-bg"></div>
+    <header id="headera">
+        <div class="nav-logo"><img src="Logo.png"></div>
+        <div class="titulo-header"><a href="index.html">SANTIAGO REYES PINILLA</a></div>
+        <nav>
+            <ul class="header">
+                <!-- <li class="nav-logo"><img src="Logo.png"></li> -->
+                <!-- <li class="titulo-header"><a href="index.html">SANTIAGO REYES PINILLA</a></li> -->
+                <li class="insta"><a href="https://www.instagram.com/reyinald_37/"><img src="instagram.png"
+                            alt="Instagram"></a></li>
+                <li class="linked"><a href="https://www.linkedin.com/in/santiago-reyes-pinilla-b36a732b2/"><img
+                            src="linkedin.png" alt="Instagram"></a></li>
+                <li class="station"><a href="https://www.artstation.com/truekingsman"><img src="Artstation.png"
+                            alt="ArtStation"></a></li>
+                <li class="sidebar"><img src="sidebar.jpg" alt="Menusito"></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="fade">
+            <div class="bloque1">
+                <h1>Santiago Reyes Pinilla</h1>
+                <h2>Ingeniero Multimedia</h2>
+                <!-- <h3><a href="HojaDeVidaModificada.pdf">Descargar CV</a></h3> -->
+            </div>
+        </section>
+        <section id="sobre-mi" class="fade">
+            <h1>Sobre Mi</h1>
+            <div class="filauno">
+                <div class="filaunoa">
+                    <h4>Soy ingeniero multimedia con experiencia en programación de aplicaciones móviles y desarrollo de
+                        videojuegos. Apasionado por la creación de experiencias interactivas tecnologicas como Unity,
+                        HTML,
+                        CSS o
+                        JavaScript. Me destaco por mi capacidad para transformar ideas en productos funcionales,
+                        conmbinando
+                        lógica, creativdad y diseño. Me mantengo en constante aprendizaje de nuevas herramientas y
+                        lenguajes
+                        con el objetivo de aportar soluciones innovadoras y eficientes a la industria del desarrollo
+                        digital.
+                    </h4>
+                </div>
 
-.fade-out::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 40%; /* qué tanto se desvanece */
-  pointer-events: none;
+                <div class="filaunob">
+                    <a href="CVProgramacion-SantiagoReyesPinilla.pdf" class="cv">Curriculum Vitae</a><br>
+                    <a href="HojaDeVidaModificada.pdf" class="cv">Curriculum Creativo</a>
+                </div>
 
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.97),
-    rgba(0,0,0,1)
-  );
-}
+            </div>
 
-.no-interact {
-  pointer-events: none;
-}
+        </section>
+        <section id="experiencia" class="fade">
+            <h1>Experencia</h1>
+            <div class="filauno">
+                <h4>• Desarrollador Unity - Proyecto ChessInteractiveLab. (2025) </h4>
+                <div class="filados">
+                    <h4>
+                        Desarrollé la lógica principal del juego en Unity, encargándome de la implementación
+                        de mecánicas y sistemas base. Diseñé interfaces UX/UI adaptadas para jóvenes, con énfasis
+                        en la accesibilidad y la interactividad. Además, participé en el diseño de flujos
+                        pedagógicos basados en teorías del aprendizaje, con el objetivo de facilitar la comprensión del
+                        juego, y coordiné la estructura del HUD para asegurar una experiencia clara e intuitiva para el
+                        usuario.
+                    </h4>
+                </div>
+                <h4>• Diseñador y Desarrollador Multimedia - Todos somos vida. (2024)</h4>
+                <div class="filacuatro">
+                    <h4>Programé la interactividad de los botones y las animaciones de un libro interactivo, implementé
+                        su
+                        visualización en realidad aumentada mediante Vuforia con escaneo por códigos QR desde
+                        dispositivos móviles,
+                        y participé en la animación de escenas y en la organización narrativa, definiendo el flujo de
+                        páginas y
+                        la progresión de la historia.
+                    </h4>
+                </div>
+        </section>
+        <section id="skills" class="fade">
+            <h1>HABILIDADES</h1>
+            <div class="row">
+                <div class="columnauno">
+                    <h1>Lenguajes de programacion </h1>
+                    <div class="columnaunob">
+                        <div class="card" style="background-image:url(Csharp_Logo.png); ">
 
-/* 
+                        </div>
+                        <div class="b">
+                            <h2>C Sharp (C#)</h2>
+                        </div>
+                        <figure></figure>
+                    </div>
+                    <div class="columnaunob">
+                        <div class="card" style="background-image:url(HTML5_Logo.png); ">
 
-CONSTRUCCION DE LOS VIDEOS
+                        </div>
+                        <div class="b">
+                            <h2>HTML 5</h2>
+                        </div>
+                    </div>
+                    <div class="columnaunob">
+                        <div class="card" style="background-image:url(CSS_Logo.png); ">
 
-*/
+                        </div>
+                        <div class="b">
+                            <h2>CSS 2</h2>
+                        </div>
+                    </div>
 
-.video-chess{
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  z-index: 4;
-  background-color: rgba(0, 0, 0, 0.841);
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  color: white;
-  padding: 50px 50px;
-   text-align: end; 
-   
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity .4s ease;
-}
+                </div>
+                <div class="columnauno">
+                    <h1>Teconologias y Herramientas </h1>
+                    <div class="columnaunob">
+                        <div class="card" style="background-image:url(unity-icon.png); ">
 
-.video-chess.show{
-  opacity: 1;
-  pointer-events: auto;
-}
+                        </div>
+                        <div class="b">
+                            <h2>Unity</h2>
+                        </div>
+                    </div>
+                    <div class="columnaunob">
+                        <div class="card" style="background-image:url(Adobe_Photoshop_CS6.png); ">
 
-.closeone a{
-  background-color: #9f39ff00;
-  color: inherit;
-  text-decoration: none;
-}
-.videoone{
-  background-color: white;
-  border: 10px solid rgba(255, 255, 255, 0.733);
-  max-width: 854px;
-  min-width: 320px;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  margin: 0 auto;
+                        </div>
+                        <div class="b">
+                            <h2>Adobe Photoshop</h2>
+                        </div>
+                        <figure></figure>
+                    </div>
+                    <div class="columnaunob">
+                        <div class="card" style="background-image:url(Adobe_After_Effects_CC.png); ">
 
-}
+                        </div>
+                        <div class="b">
+                            <h2>After Effects</h2>
+                        </div>
+                    </div>
+                    <div class="columnaunob">
+                        <div class="card" style="background-image:url(affinity-icon.png); ">
 
-.description{
-  background-color: black;
-  border: 5px solid rgb(255, 255, 255);
-  max-width: 854px;
-  min-width: 320px;
-  width: 100%;
-  height: 30vh;
-  margin: 0 auto;
-  text-align: start;
-  padding-left: 30px;
-}
+                        </div>
+                        <div class="b">
+                            <h2>Affinity</h2>
+                        </div>
+                    </div>
+                    <div class="columnaunob">
+                        <div class="card" style="background-image:url(autodesk-maya.png); ">
 
-@media (max-width: 600px) {
-  #proyectos .columnas {
-    flex-wrap: wrap;
-  }
-}
-@media (max-width: 1000px) {
-  #proyectos h1{
-    width: fit-content;
-    padding: 0px 35px;
-  }
-}
+                        </div>
+                        <div class="b">
+                            <h2>Autodesk Maya</h2>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="columnauno">
+                    <h1 style="font-size: 30px;">Habilidades Blandas </h1>
+                    <div class="columnaunoc">
+                        <div class="b">
+                            <h2>• Atención al detalle</h2>
+                        </div>
+                        <div class="b">
+                            <h2>• Proactividad</h2>
+                        </div>
+                        <div class="b">
+                            <h2>• Capacidad de escucha</h2>
+                        </div>
+                        <div class="b">
+                            <h2>• Pensamiento critico</h2>
+                        </div>
+                        <div class="b">
+                            <h2>• Nivel de Ingles C1</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="proyectos" class="fade fade-out">
+            <h1>MIS PROYECTOS</h1>
+            <div class="columnas">
+                <div class="rowa">
+                    <div class="rowuno">
+
+                    </div>
+                    <div class="desc">
+                        <h2>• Proyecto ChessInteractiveLab. Desarrollador Unity - (2025)</h2>
+                        <div class="hache3">
+                            <div class="txt">
+                                <h3>-Programación de la lógica del juego en Unity.-Diseño de la interfaz UX/UI adaptada
+                                    para jovenes, con enfoque
+                                    en la accesibilidad y interactividad.-Participación en el diseño
+                                    de flujos pedagógicos basados en teórias del aprendizaje para
+                                    facilitar lacomprensión del juego.- Coordinación de la
+                                    estructura del HUD.</h3>
+                            </div>
+                            <div class="vermas">
+                                <a href="#" class="btn btn-videos" data-target="#chess">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rowb">
+                    <div class="rowuno">
+                    </div>
+                    <div class="desc">
+                        <h2>• Todos somos vida. Diseñador y Desarrollador Multimedia - (2024)</h2>
+                        <div class="hache3">
+                            <div class="txt">
+                                <h3>Me encargué de programar los botones para que el libro fuera interactivo y
+                                    acompañara las animaciones, implementé el libro en realidad aumentada con Vuforia
+                                    para que se pudiera escanear desde dispositivos móviles usando códigos QR,
+                                    y participé en la animación de las escenas, ayudando a organizar la narrativa
+                                    y definir el flujo de las páginas para que la historia avanzara de manera clara y
+                                    atractiva.</h3>
+                            </div>
+                            <div class="vermas">
+                                <a href="#" class="btn btn-videos" data-target="#cataleya">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columnas">
+                <div class="rowa">
+                    <div class="rowdos">
+
+                    </div>
+                    <div class="desc">
+                        <h2>• Shooter multijugador tipo battle royale. Desarrollador Unity - (Proyecto personal, 2023)
+                        </h2>
+                        <div class="hache3">
+                            <div class="txt">
+                                <h3>Diseñé y desarrollé mapas enfocados en la exploración y
+                                    recolección de ítems, implementé mecánicas fundamentales
+                                    como cambio de armas, sistema de disparo, movilidad y HUD,
+                                    y desarrollé sistemas de vida, escudos y objetos de recuperación.</h3>
+                            </div>
+                            <div class="vermas">
+                                <a href="#" class="btn btn-videos" data-target="#fornai">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rowb">
+                    <div class="rowdos">
+
+                    </div>
+                    <div class="desc">
+                        <h2>• Videojuego 2D de plataformas con combate. Desarrollador Unity - (Proyecto de universidad,
+                            2023)</h2>
+                        <div class="hache3">
+                            <div class="txt">
+                                <h3>Desarrollé la programación de enemigos con distintos comportamientos y ataques,
+                                    incluyendo un jefe final, implementé las mecánicas principales del jugador como
+                                    movilidad, sistema de combate y transformación del personaje, y diseñé el sistema de
+                                    colisiones, control de animaciones y detección de daño.</h3>
+                            </div>
+                            <div class="vermas">
+                                <a href="#" class="btn btn-videos" data-target="#bhastardy">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columnas no-interact">
+                <div class="rowa">
+                    <div class="rowtres">
+
+                    </div>
+                    <div class="desc">
+                        <h2>• Todos somos vida. Diseñador y Desarrollador Multimedia - (2024)</h2>
+                        <div class="hache3">
+                            <div class="txt">
+                                <h3>Diseñé y desarrollé mapas enfocados en la exploración y
+                                    recolección de ítems, implementé mecánicas fundamentales
+                                    como cambio de armas, sistema de disparo, movilidad y HUD,
+                                    y desarrollé sistemas de vida, escudos y objetos de recuperación.</h3>
+                            </div>
+                            <div class="vermas">
+                                <a href="#" class="btn">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rowb">
+                    <div class="rowtres">
+
+                    </div>
+                    <div class="desc">
+                        <h2>• Todos somos vida. Diseñador y Desarrollador Multimedia - (2024)</h2>
+                        <div class="hache3">
+                            <div class="txt">
+                                <h3>Diseñé y desarrollé mapas enfocados en la exploración y
+                                    recolección de ítems, implementé mecánicas fundamentales
+                                    como cambio de armas, sistema de disparo, movilidad y HUD,
+                                    y desarrollé sistemas de vida, escudos y objetos de recuperación.</h3>
+                            </div>
+                            <div class="vermas">
+                                <a href="#" class="btn">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video-chess" id="chess">
+            <div class="closeone">
+                <h1><a href="index.html#proyectos">✖ CERRAR</a></h1>
+            </div>
+            <!-- <video src="Chess Lab .mp4" controls class="videoone"></video> -->
+            <iframe class="videoone" src="https://www.youtube.com/embed/MsI9qFnWvsE" allowfullscreen>
+            </iframe>
+            <div class="description">
+                <h2>EL VIDEO TUTORIAL YOUTUBER</h2>
+            </div>
+        </section>
+        <section class="video-chess" id="cataleya">
+            <div class="closeone">
+                <h1><a href="index.html#proyectos">✖ CERRAR</a></h1>
+            </div>
+            <iframe class="videoone" src="https://www.youtube.com/embed/Xv5b3BE-bQs" allowfullscreen>
+            </iframe>
+            <div class="description">
+                <h2>EL VIDEO TUTORIAL PRACTICAS</h2>
+            </div>
+        </section>
+        <section class="video-chess" id="fornai">
+            <div class="closeone">
+                <h1><a href="index.html#proyectos">✖ CERRAR</a></h1>
+            </div>
+            <iframe class="videoone" src="https://www.youtube.com/embed/AWhg0hF2RVg" allowfullscreen>
+            </iframe>
+            <div class="description">
+                <h2>EL VIDEO TUTORIAL FORNAIS</h2>
+            </div>
+        </section>
+        <section class="video-chess" id="bhastardy">
+            <div class="closeone">
+                <h1><a href="index.html#proyectos">✖ CERRAR</a></h1>
+            </div>
+            <iframe class="videoone" src="https://www.youtube.com/embed/2-gwujF1Dpo" allowfullscreen>
+            </iframe>
+            <div class="description">
+                <h2>EL VIDEO TUTORIAL BHASTARDY</h2>
+            </div>
+        </section>
+
+        <!-- <section id="contactos">
+        </section> -->
+        <!-- <div style="height: 2000px; background: lightgray;">
+            Aquí hay espacio para probar el scroll.
+        </div> -->
+
+    </main>
+    <footer class="fate">
+        <ul class="futer">
+            <li class="finsta"><a href="https://www.instagram.com/reyinald_37/"><img src="instagram.png"
+                        alt="Instagram"></a></li>
+            <li>
+                <h2 class="logos">Instagram</h2>
+            </li>
+            <li class="flinked"><a href="https://www.linkedin.com/in/santiago-reyes-pinilla-b36a732b2/"><img
+                        src="linkedin.png" alt="LinkedIn"></a></li>
+            <li>
+                <h2 class="logos">LinkedIn</h2>
+            </li>
+            <li class="fstation"><a href="https://www.artstation.com/truekingsman"><img src="Artstation.png"
+                        alt="ArtStation"></a></li>
+            <li>
+                <h2 class="logos">ArtStation</h2>
+            </li>
+        </ul>
+        <h3>Contacto - Numero de celular: +57 322 359 9207 - Email: srpinilla@outlook.es</h3>
+        <h3>© Santiago Reyes - 2026</h3>
+    </footer>
+    <nav class="sidebar-menu">
+        <ul>
+            <li><a href="#inicio">➤ Inicio</a></li>
+            <li><a href="#sobre-mi">➤ Sobre Mi</a></li>
+            <li><a href="#experiencia">➤ Experencia</a></li>
+            <li><a href="#skills">➤ Habilidades</a></li>
+            <li><a href="#proyectos">➤ Mis Proyectos</a></li>
+            <li><a href="#contactos">➤ Contacto</a></li>
+        </ul>
+    </nav>
+
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
