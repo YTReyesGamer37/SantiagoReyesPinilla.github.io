@@ -195,16 +195,16 @@ main {
 } 
 
 #inicio h1{
-  -webkit-text-stroke: 0.1px black;
-    text-shadow: 
+   -webkit-text-stroke: 0.1px black;
+  /*  text-shadow: 
         0 0 4px rgba(0,255,180,0.4),
-        0 2px 6px rgba(0,0,0,0.7);
-  letter-spacing: clamp(0.5px, 1vw, 3px);
+        0 2px 6px rgba(0,0,0,0.7); */
+  letter-spacing: clamp(0.5px, 1vw, 1px);
   font-family: 'Anton', sans-serif;
   font-size: clamp(28px, 8vw, 80px);
   align-items: center;
   color: rgb(236, 235, 235);
-  background-color: #000000a5;
+  background-color: #000000;
   width: 80vw;
   border-radius: 100px;
   margin-bottom: 15px;
@@ -214,11 +214,11 @@ main {
   justify-items: center;
 }
 #inicio h2{
-  -webkit-text-stroke: 0.1px rgb(0, 0, 0);
+  -webkit-text-stroke: 0.1px rgb(0, 0, 0); 
   font-family: 'Anton', sans-serif;
   font-size: clamp(16px, 6vw, 40px);
   color: rgb(236, 235, 235);
-  background-color: #000000a5;
+  background-color: #000000;
   width: 45vw;
   border-radius: 100px;
 }
@@ -348,4 +348,5 @@ COSAS DEL FADEEEE
     padding: 0px 15px;
   }
 }
+
 
