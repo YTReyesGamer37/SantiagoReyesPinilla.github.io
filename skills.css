@@ -49,7 +49,7 @@
   text-align: center;
 }
 .columnauno .columnaunob{
-  background-color: #60fd87;
+  /* background-color: #60fd87; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -60,7 +60,7 @@
 }
 
 .columnauno .columnaunoc{
-  background-color: #60fd87;
+  /* background-color: #60fd87; */
   display: flex;
   flex-direction: column;
   align-items:start;
@@ -83,14 +83,14 @@
   font-size: 15px;
   text-wrap: nowrap;
   width: 70%;
-  background-color: rgb(240, 248, 255);
+  /* background-color: rgb(240, 248, 255); */
 }
 
 .columnaunoc .b{
   font-size: 15px;
   text-wrap: nowrap;
   width: 90%;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
 }
 
 @media (max-width: 1000px){
